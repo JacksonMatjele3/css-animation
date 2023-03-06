@@ -1,0 +1,33 @@
+/*set the size of the image*/
+.instagram-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.instagram-logo img:hover {
+    width: 100px;
+    height: 100px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes animation {
+    
+    0%{
+        filter: grayscale(0%);
+    transform: rotate(0deg);
+    }
+    50%{
+        filter: grayscale(100%);
+        transform:rotate(180deg);
+    }
+    100%{
+        filter: grayscale(0%);
+        transform: rotate(360deg);
+    }
+
+}
+
